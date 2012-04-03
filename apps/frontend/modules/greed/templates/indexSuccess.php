@@ -1,7 +1,7 @@
 <div >
 
 <?php if ($action =='nDraws'):?>
- <?php include_partial('form', array('greed' => $greed, 'form' => $form))?>
+  <?php include_partial('form', array('greed' => $greed, 'form' => $form))?>
  
 <?php else:?>
   <div style="align: centre;width:400px;padding:10px;margin:10px;float:left;border: 1px solid;">
@@ -14,8 +14,8 @@
   </div> 
 <?php endif;?>
 
-  <?php if (isset($greed)):?>
-    <?php include_partial('score', array('greed' => $greed))?>
-  <?php endif;?>  
+<?php if (isset($greed)):?>
+  <?php include_partial('score', array('greed' => $greed))?>
+<?php endif;?>  
 
 </div>
