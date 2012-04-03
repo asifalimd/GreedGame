@@ -1,0 +1,50 @@
+GreedGame
+====================
+
+Description
+-----------
+
+This is a Dice game developed using symgony framework (1.4) version.
+
+[Know more about GreedGame ] (http://en.wikipedia.org/wiki/Greed_%28dice_game%29)
+
+
+Requirements
+------------
+You need PHP5 host to run this code
+
+
+Installation
+------------
+Simply map your document root of your host to web directory. The current version does not required any DB/other settings to configure.
+
+
+How it works
+------------
+The dice score is calculated on based on the predefined points. See the below points
+If there are tripple dice with same face value we give the below points
+Tripple 1 => 1000
+Tripple 2 => 200
+Tripple 3 => 300
+Tripple 4 => 400
+Tripple 5 => 500
+Tripple 6 => 600
+
+Single 1 => 100
+Single 5 => 50
+
+All other conbinations will be treated as non scoring throws/dice.
+
+
+If there are N dice drawn and there are more than one set of Tripple Dice with same dice value then I multiply the no of occurances with Tripple set points.
+
+Ex: Dice Set [2,3,5,4,5,2,2,2,4,1,1,2,2,6,5,2]
+There are 2 sets of Tripple 2's in this so we calculate the score for these sets is 2X 200 = 400 
+
+
+
+
+
+
+
+
